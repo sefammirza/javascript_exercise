@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İf Else Switch</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    var marka = 'Opel';
+    var model = 'Astra';
+    var vehicle = 'Yes';
+
+    if(vehicle=='yes'){
+        console.log('Vehicle automatic.');
+    }
+    else{
+        console.log('The vehicle is not automatic.');
+    }
+
+    vehicle = true;
+
+    if(vehicle){
+        console.log(marka +' '+ model +' vehicle');
+    }
+
+    if (vehicle == true){
+        console.log("True");
+    }
+    if (10 == '10'){
+        console.log('Numbers equal');
+    }
+
+    var vites = '2';
+    if (vites =='1'){
+        console.log('Vehicle manual.');
+    }
+    else if (vites == '2'){
+        console.log('Vehicle automatic.');
+    }
+    else{
+        console.log('Wrong value.');
+    }
+
+
+
+    vites = '3';
+    switch(vites){
+        case '1':
+        console.log('Vehicle manual.');
+        break;
+        case '2':
+        console.log('Vehicle automatic.');
+        break;
+        default:
+            console.log('Wrong value.');
+    }
+    
+    </script>
+    
+</body>
+</html>
