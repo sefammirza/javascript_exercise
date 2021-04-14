@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+</head>
+<body>
+    <script>
+        var brand = ["Opel", "Toyota", "Mazda", "Renault", "Bmw"];
+        var model = new Array("Corsa", "Yaris", "CX-3", "Clio");
+
+        console.log(brand[2]);
+        console.log(model[2]);
+
+        model[0] = "Astra";
+        console.log(model);
+
+        var auris = ["Toyota", "Auris", 42, true];
+        auris.push("blue");
+        auris.unshift("HB");
+        auris.pop();
+        auris.shift();
+        console.log(auris);
+
+        for(var i=0; i<brand.length;i++){
+            console.log(brand[i]);
+        }
+
+        if(brand.indexOf("Mercedes")!==-1){
+            console.log(brand[brand.indexOf('Mazda')]);
+        }
+        else{
+            console.log('The search word was not found.')
+        }
+
+    </script>
+</body>
+</html>
