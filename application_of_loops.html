@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application of loops</title>
+</head>
+<body>
+    <script>
+        /*
+        for (var i=100 ; i>=10; i--){
+            console.log(i);
+        }*/
+        /*
+        var i=10;
+        while (i<=100){
+            console.log(i);
+            i=i+5;
+        }
+        */
+
+        var k_username = "guest";
+        var k_password = "12345";
+        var loggedin = false;
+
+        while (loggedin == false){
+
+        var username = prompt("User Name: ");
+        var password = prompt("Password: ");
+
+        if ((k_username==username) && (k_password==password)){
+            console.log("Signed in");
+            loggedin=true;
+        }
+        else{
+            console.log("Incorrect username or password");
+        }
+    }
+
+    </script>
+</body>
+</html>
