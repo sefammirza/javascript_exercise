@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Practice</title>
+</head>
+<body>
+    <script>
+        var staff = 
+            {
+            name : 'Sefa',
+            surname : 'Mirza', 
+            gender : 'man',
+            number : '05320000000',
+            adress : 'Bursa',
+            jop : 'computer engenerr',
+            languages : ['english', 'turkish'],
+            hobbies : ['cinema', 'cycling']
+        };
+  
+
+        console.log(staff);
+        console.log(staff.languages.length);
+        
+        staff.hobbies.forEach(function(hobi){
+            console.log(hobi);
+        });
+
+        var personel = [
+        {
+            name : 'Sefa',
+            surname : 'Mirza', 
+            gender : 'man',
+            number : '05320000000',
+            adress : 'Bursa',
+            jop : 'computer engenerr',
+            languages : ['english', 'turkish'],
+            hobbies : ['cinema', 'cycling']
+        },
+        {
+            name : 'Ahmet',
+            surname : 'Mirza', 
+            gender : 'man',
+            number : '05320089700',
+            adress : 'Bursa',
+            jop : 'computer engenerr',
+            languages : ['english', 'turkish'],
+            hobbies : ['cinema', 'cycling']
+        },
+        {
+            name : 'Mehmet',
+            surname : 'Mirza', 
+            gender : 'man',
+            number : '0532056000',
+            adress : 'Bursa',
+            jop : 'Lawer',
+            languages : ['english', 'turkish', 'frence'],
+            hobbies : ['cinema', 'cycling']
+        },
+        ];
+        console.log(personel);
+
+        personel.forEach(function(personel){
+            console.log('*************');
+            console.log(personel.name+' '+personel.surname);
+            personel.languages.forEach(function(language){
+                console.log(language);
+            });
+        });
+        
+    </script>
+</body>
+</html>

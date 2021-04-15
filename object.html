@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        /*
+        var breand = ['Opel', 'Toyota', 'Mazda'];
+        var model = ['Corsa', 'Yaris', 'CX-3'];
+        var year = ['2015', '2012', '2016'];
+
+        console.log(breand[0] + ' ' +  model[0] + ' ' + year[0]);
+
+        var opel = ['Opel','Corsa','2015',]
+        var toyota = ['Toyota','Yaris','2012',]
+        var mazda = ['Mazda','CX-3','2016',]
+        
+        console.log(opel);
+        */
+
+        var opel = {
+            breand : 'Opel',
+            model : 'Corsa', 
+            year : '2015',
+            color : 'blue',
+            automatic : true
+        }
+
+        console.log(opel);
+        console.log(opel.model);
+        console.log(opel['color']);
+
+        var toyota = new Object();
+        toyota.breand='Toyota';
+        toyota.model='Yaris';
+        toyota.year='2012';
+        toyota.color='red';
+        toyota.automatic=true;
+        console.log(toyota);
+
+        toyota.model='Auris';
+        console.log(toyota);
+
+        var cars = [
+            {
+            breand : 'Opel',
+            model : 'Corsa', 
+            year : '2015',
+            color : 'blue',
+            automatic : true
+        },
+        {
+            breand : 'Mazda',
+            model : 'CX-3', 
+            year : '2016',
+            color : 'blue',
+            automatic : true
+        },
+    ];
+
+    console.log(cars[1].model);
+
+    for(var i=0; i<cars.length; i++){
+        console.log(cars[i].breand);
+
+    }
+
+
+
+    </script>
+</body>
+</html>
