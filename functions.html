@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        
+        function collect(a,b){
+            return a+b;
+        }
+        var result = collect(10,20);
+
+        console.log(result);
+        console.log(collect(40,50));
+
+        var now = 2021;
+
+        function calculate_age(age){
+            return now-age;
+        }
+
+        var ahmet = calculate_age(1997);
+        var sefa = calculate_age(1995);
+
+        console.log(ahmet);
+        console.log(sefa);
+
+        function calculate_pension(name,age){
+            var k_age = calculate_age(age);
+            var pension = 65 - k_age;
+
+            if (pension>0){
+             console.log(name+ ' '+ pension+ ' can retire at the age of' );    
+            }
+            else {
+                console.log(name+ ' already '+ (pension*-1)+ ' retired years ago.')
+            }
+
+           
+        }
+
+        calculate_pension('sefa', 1995)
+        calculate_pension('ahmet', 1920)
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
