@@ -68,7 +68,7 @@ const gurcan = new Person("Gürcan", "Çekiç", 5);
 console.log(arin);
 console.log(gurcan); */
 
-const arin = {
+/* const arin = {
     name: "Arin",
     age:5,
     surname:"Çekiç",
@@ -83,7 +83,7 @@ const arin = {
         surname:"Çekiç",
         fullName: function(){
             console.log(this)
-            return this.name + " " + this.surname
+            //return this.name + " " + this.surname
         }
 
     }
@@ -92,3 +92,29 @@ const arin = {
 
 console.log(arin);
 console.log(arin.fullName());
+console.log(arin.mother.fullName()); */
+
+/* const elis = {
+    name : "Elis",
+    funcy: function(){
+        console.log(this === elis);
+        console.log(this === window);
+    }
+}
+
+//console.log(elis.funcy());
+
+const funcy2 = elis.funcy();
+console.log(funcy2()); */
+
+const elis = {
+    name : "Elis",
+    funcy: function(){
+        console.log(this === elis);
+        setTimeout(function(){
+            console.log(this === elis);
+            console.log(this === window);
+        }, 2000);
+    }
+}
+console.log(elis.funcy());
